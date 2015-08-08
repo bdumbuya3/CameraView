@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/svCamView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <TextView
+        android:id="@+id/etDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Camera View\nby Brandon Dumbuya"
+        android:textColor="@android:color/black"/>
+    <Button
+        android:id="@+id/bSnap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@android:color/holo_red_dark"
+        android:text="Snap"/>
+    <Button
+        android:id="@+id/bFlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginRight="25dp"
+        android:layout_toLeftOf="@+id/bSnap"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Flash"/>
+    <Button
+        android:id="@+id/bFlip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/bSnap"
+        android:background="@android:color/holo_green_dark"
+        android:text="Flip"/>
+
+</RelativeLayout>
